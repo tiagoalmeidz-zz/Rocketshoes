@@ -42,7 +42,7 @@ export const ProductList = styled.ul`
       transition: 0.3s;
 
       &:hover {
-        opacity: 0.9;
+        opacity: 0.8;
       }
 
       div {
