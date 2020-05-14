@@ -5,6 +5,8 @@ import { ProductList } from './styles';
 import api from '../../services/api';
 import { formatPrice } from '../../util/format';
 
+import * as CartActions from '../../store/modules/cart/actions';
+
 export default function Home() {
   const [products, setProducts] = useState([]);
 
@@ -26,7 +28,7 @@ export default function Home() {
   }, []);
 
   function handleAddProduct(product) {
-    dispatch({ type: 'ADD_TO_CART', product });
+    dispatch(CartActions.addToCart(product));
   }
 
   return (

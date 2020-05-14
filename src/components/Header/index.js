@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdShoppingBasket } from 'react-icons/md';
+import { MdShoppingCart } from 'react-icons/md';
 import { useSelector } from 'react-redux';
 import { Container, Cart } from './styles';
 import logo from '../../assets/images/logo.svg';
@@ -21,7 +21,7 @@ export default function Header() {
             {cartSize} {cartSize > 1 ? 'itens' : 'item'}
           </span>
         </div>
-        <MdShoppingBasket size={36} color="#FFF" />
+        <MdShoppingCart size={36} color="#FFF" />
       </Cart>
     </Container>
   );

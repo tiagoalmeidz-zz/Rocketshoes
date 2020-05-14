@@ -8,6 +8,8 @@ import {
 } from 'react-icons/md';
 import { Container, ProductTable, Total } from './styles';
 
+import * as CartActions from '../../store/modules/cart/actions';
+
 export default function Cart() {
   const dispatch = useDispatch();
   const cart = useSelector(state => state.cart);
@@ -52,7 +54,7 @@ export default function Cart() {
                 <button
                   type="button"
                   onClick={() =>
-                    dispatch({ type: 'REMOVE_FROM_CART', id: product.id })
+                    dispatch(CartActions.removeFromCart(product.id))
                   }
                 >
                   <MdDelete size={20} color="#7159c1" />
