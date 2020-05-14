@@ -1,5 +1,6 @@
 const ActionsCart = {
-  ADD_TO_CART: '@cart/ADD',
+  ADD_REQUEST: '@cart/ADD_REQUEST',
+  ADD_SUCCESS: '@cart/ADD_SUCCESS',
   REMOVE_FROM_CART: '@cart/REMOVE',
   UPDATE_AMOUNT: '@cart/UPDATE_AMOUNT',
 };

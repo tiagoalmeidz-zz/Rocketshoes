@@ -1,7 +1,17 @@
 import ActionsCart from './const';
 
-export function addToCart(product) {
-  return { type: ActionsCart.ADD_TO_CART, product };
+export function addToCartRequest(id) {
+  return {
+    type: ActionsCart.ADD_REQUEST,
+    id,
+  };
+}
+
+export function addToCartSuccess(product) {
+  return {
+    type: ActionsCart.ADD_SUCCESS,
+    product,
+  };
 }
 
 export function removeFromCart(id) {
