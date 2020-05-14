@@ -9,10 +9,17 @@ import {
 import { Container, ProductTable, Total } from './styles';
 
 import * as CartActions from '../../store/modules/cart/actions';
+import { formatPrice } from '../../util/format';
 
 export default function Cart() {
   const dispatch = useDispatch();
-  const cart = useSelector(state => state.cart);
+
+  const cart = useSelector(state =>
+    state.cart.map(product => ({
+      ...product,
+      subtotal: formatPrice(product.price * product.amount),
+    }))
+  );
 
   function incrementAmount(product) {
     dispatch(CartActions.updateAmount(product.id, product.amount + 1));
@@ -62,7 +69,7 @@ export default function Cart() {
                 </div>
               </td>
               <td>
-                <strong>R$ 258,80</strong>
+                <strong>{product.subtotal}</strong>
               </td>
               <td>
                 <button
