@@ -14,6 +14,14 @@ export default function Cart() {
   const dispatch = useDispatch();
   const cart = useSelector(state => state.cart);
 
+  function incrementAmount(product) {
+    dispatch(CartActions.updateAmount(product.id, product.amount + 1));
+  }
+
+  function decrementAmount(product) {
+    dispatch(CartActions.updateAmount(product.id, product.amount - 1));
+  }
+
   return (
     <Container>
       <ProductTable>
@@ -38,11 +46,17 @@ export default function Cart() {
               </td>
               <td>
                 <div>
-                  <button type="button">
+                  <button
+                    type="button"
+                    onClick={() => decrementAmount(product)}
+                  >
                     <MdRemoveCircleOutline size={20} color="#7159c1" />
                   </button>
                   <input type="number" readOnly value={product.amount} />
-                  <button type="button">
+                  <button
+                    type="button"
+                    onClick={() => incrementAmount(product)}
+                  >
                     <MdAddCircleOutline size={20} color="#7159c1" />
                   </button>
                 </div>
