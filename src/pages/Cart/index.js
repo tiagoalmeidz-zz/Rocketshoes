@@ -21,6 +21,14 @@ export default function Cart() {
     }))
   );
 
+  const totalCart = formatPrice(
+    useSelector(state =>
+      state.cart.reduce((total, product) => {
+        return total + product.price * product.amount;
+      }, 0)
+    )
+  );
+
   function incrementAmount(product) {
     dispatch(CartActions.updateAmount(product.id, product.amount + 1));
   }
@@ -91,7 +99,7 @@ export default function Cart() {
 
         <Total>
           <span>TOTAL</span>
-          <strong>R$ 1920,28</strong>
+          <strong>{totalCart}</strong>
         </Total>
       </footer>
     </Container>
