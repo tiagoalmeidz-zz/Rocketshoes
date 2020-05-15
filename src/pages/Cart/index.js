@@ -19,8 +19,6 @@ import * as CartActions from '../../store/modules/cart/actions';
 import { formatPrice } from '../../util/format';
 
 export default function Cart() {
-  const dispatch = useDispatch();
-
   const cart = useSelector(state =>
     state.cart.map(product => ({
       ...product,
@@ -36,6 +34,8 @@ export default function Cart() {
     )
   );
 
+  const dispatch = useDispatch();
+
   function incrementAmount(product) {
     dispatch(CartActions.updateAmountRequest(product.id, product.amount + 1));
   }
@@ -46,7 +46,7 @@ export default function Cart() {
 
   return (
     <Container>
-      {cart.lenght ? (
+      {cart.length ? (
         <>
           <ProductTable>
             <thead>
