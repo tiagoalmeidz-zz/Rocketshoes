@@ -69,14 +69,11 @@ export const StartShopping = styled(Link)`
   padding: 12px 20px;
   font-weight: bold;
   text-transform: uppercase;
-  transition: background 180ms ease-in-out;
   text-decoration: none;
   display: inline-block;
+  transition: 0.3s;
 
   &:hover {
-    opacity: 0.8;
-  }
-  &:active {
     opacity: 0.8;
   }
 `;
