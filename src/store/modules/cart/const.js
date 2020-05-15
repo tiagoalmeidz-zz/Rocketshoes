@@ -2,6 +2,7 @@ const ActionsCart = {
   ADD_REQUEST: '@cart/ADD_REQUEST',
   ADD_SUCCESS: '@cart/ADD_SUCCESS',
   REMOVE_FROM_CART: '@cart/REMOVE',
-  UPDATE_AMOUNT: '@cart/UPDATE_AMOUNT',
+  UPDATE_AMOUNT_REQUEST: '@cart/UPDATE_AMOUNT_REQUEST',
+  UPDATE_AMOUNT_SUCCESS: '@cart/UPDATE_AMOUNT_SUCCESS',
 };
 export default ActionsCart;

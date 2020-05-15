@@ -18,6 +18,10 @@ export function removeFromCart(id) {
   return { type: ActionsCart.REMOVE_FROM_CART, id };
 }
 
-export function updateAmount(id, amount) {
-  return { type: ActionsCart.UPDATE_AMOUNT, id, amount };
+export function updateAmountRequest(id, amount) {
+  return { type: ActionsCart.UPDATE_AMOUNT_REQUEST, id, amount };
+}
+
+export function updateAmountSuccess(id, amount) {
+  return { type: ActionsCart.UPDATE_AMOUNT_SUCCESS, id, amount };
 }
