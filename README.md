@@ -7,16 +7,16 @@
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/tiagoalmeida93/react-rocketshoes.svg">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tiagoalmeida93/react-rocketshoes.svg">
-  <a href="https://github.com/tiagoalmeida93/react-rocketshoes/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tiagoalmeida93/react-rocketshoes.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tiagoalmeida93/Rocketshoes.svg">
+  <a href="https://github.com/tiagoalmeida93/Rocketshoes/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tiagoalmeida93/Rocketshoes.svg">
   </a>
 
   <a href="https://github.com/tiagoalmeida93/Rocketshoes/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/tiagoalmeida93/react-rocketshoes.svg">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/tiagoalmeida93/Rocketshoes.svg">
   </a>
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/tiagoalmeida93/react-rocketshoes.svg">
+  <img alt="GitHub" src="https://img.shields.io/github/license/tiagoalmeida93/Rocketshoes.svg">
 </p>
 
 <p align="center">
@@ -25,19 +25,19 @@
   <a href="#memo-license">License</a>
 </p>
 
-<h2 align="center">Home</h2>
+<h3 align="center">Home</h3>
 
 ![Home](public/Screenshots/Screenshot-Home.png)
 
-<h2 align="center">Cart Clear</h2>
+<h3 align="center">Cart Clear</h3>
 
 ![Cart-Clear](public/Screenshots/Screenshot-Cart-Clear.png)
 
-<h2 align="center">Cart with Products</h2>
+<h3 align="center">Cart with Products</h3>
 
 ![Cart-Full](public/Screenshots/Screenshot-Cart-Full.png)
 
-<h3 align="center">Demo on</h3>
+<h2 align="center">Demo on</h2>
 <p align="center">
   <a href="https://tiago-rocketshoes.netlify.com/" target="_blank">
     <img alt="Demo on Netlify" src="https://imgee.s3.amazonaws.com/imgee/40d52c694e8f46ae8a17534a740a8314_w320_h114.png">
