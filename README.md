@@ -1,6 +1,6 @@
-<h3 align="center">
+<h2 align="center">
   NetShoes Clone App with React and Redux.
-</h3>
+</h2>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/tiagoalmeida93/react-rocketshoes.svg">
@@ -16,7 +16,7 @@
     <img alt="Repository issues" src="https://img.shields.io/github/issues/tiagoalmeida93/Rocketshoes.svg">
   </a>
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/tiagoalmeida93/Rocketshoes.svg">
+  <img alt="GitHub" src="https://img.shields.io/github/license/tiagoalmeida93/react-rocketshoes.svg">
 </p>
 
 <p align="center">
@@ -25,15 +25,15 @@
   <a href="#memo-license">License</a>
 </p>
 
-<h3 align="center">Home</h3>
+<h2 align="center">Home</h2>
 
 ![Home](public/Screenshots/Screenshot-Home.png)
 
-<h3 align="center">Cart Clear</h3>
+<h2 align="center">Cart Clear</h2>
 
 ![Cart-Clear](public/Screenshots/Screenshot-Cart-Clear.png)
 
-<h3 align="center">Cart with Products</h3>
+<h2 align="center">Cart with Products</h2>
 
 ![Cart-Full](public/Screenshots/Screenshot-Cart-Full.png)
 
