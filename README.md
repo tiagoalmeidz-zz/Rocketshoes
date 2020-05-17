@@ -25,12 +25,19 @@
   <a href="#memo-license">License</a>
 </p>
 
+<h2 align="center">Home</h2>
+
 ![Home](public/Screenshots/Screenshot-Home.png)
+
+<h2 align="center">Cart Clear</h2>
 
 ![Cart-Clear](public/Screenshots/Screenshot-Cart-Clear.png)
 
+<h2 align="center">Cart with Products</h2>
+
 ![Cart-Full](public/Screenshots/Screenshot-Cart-Full.png)
 
+<h3 align="center">Demo on</h3>
 <p align="center">
   <a href="https://tiago-rocketshoes.netlify.com/" target="_blank">
     <img alt="Demo on Netlify" src="https://imgee.s3.amazonaws.com/imgee/40d52c694e8f46ae8a17534a740a8314_w320_h114.png">
