@@ -25,10 +25,15 @@
   <a href="#memo-license">License</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/lukemorales/image/upload/v1563042321/readme_logos/rocketshoes_readme_swvhr9.png)
+![Home](public/Screenshots/Screenshot-Home.png)
+
+![Cart-Clear](public/Screenshots/Screenshot-Cart-Clear.png)
+
+![Cart-Full](public/Screenshots/Screenshot-Cart-Full.png)
+
 <p align="center">
-  <a href="https://rocketshoes.netlify.com/" target="_blank">
-    <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1563043495/readme_logos/demo_on_netlify_bbuvjz.png">
+  <a href="https://tiago-rocketshoes.netlify.com/" target="_blank">
+    <img alt="Demo on Netlify" src="https://imgee.s3.amazonaws.com/imgee/40d52c694e8f46ae8a17534a740a8314_w320_h114.png">
   </a>
 </p>
 
