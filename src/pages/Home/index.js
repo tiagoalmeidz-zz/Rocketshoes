@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Loader from 'react-loader-spinner';
 import { MdAddShoppingCart } from 'react-icons/md';
-import { ProductList } from './styles';
 import api from '../../services/api';
 import { formatPrice } from '../../util/format';
 
 import * as CartActions from '../../store/modules/cart/actions';
 
+import { ProductList, Loading } from './styles';
+
 export default function Home() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const dispatch = useDispatch();
 
@@ -29,6 +32,7 @@ export default function Home() {
     }));
 
     setProducts(data);
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -39,7 +43,11 @@ export default function Home() {
     dispatch(CartActions.addToCartRequest(id));
   }
 
-  return (
+  return loading ? (
+    <Loading>
+      <Loader type="ThreeDots" color="#FFFFFF" />
+    </Loading>
+  ) : (
     <ProductList>
       {products.map(product => (
         <li key={product.id}>

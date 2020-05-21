@@ -37,6 +37,10 @@ export const ProductList = styled.ul`
       overflow: hidden;
       margin-top: auto;
 
+      &:disabled {
+        cursor: wait;
+      }
+
       display: flex;
       align-items: center;
       transition: 0.3s;
@@ -62,5 +66,17 @@ export const ProductList = styled.ul`
         font-weight: bold;
       }
     }
+  }
+`;
+
+export const Loading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  svg {
+    height: 150px;
+    width: 100px;
+    fill: #fff;
   }
 `;
