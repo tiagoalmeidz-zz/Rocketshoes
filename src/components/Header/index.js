@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdShoppingCart } from 'react-icons/md';
 import { useSelector } from 'react-redux';
 import { Container, Cart } from './styles';
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/logo.png';
 
 export default function Header() {
   const cartSize = useSelector(state => state.cart.length);
